@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication4.AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+
+ <asp:ContentPlaceHolder ID="head" runat="server"> </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="css/StyleSheetAdmin.css" />
+</head>
+
+<body>
+<div>
+  <form id="form1" runat="server" style="font-family: 'Times New Roman', Times, serif; font-size: 30px; font-style: italic; color: #990033">
+ 
+ <div><img src="images1/BR.jpg" style="height: 180px; width: 350px" /></div>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<asp:ImageButton ID="ImageButton1" runat="server" 
+      ImageUrl="~/images1/logout.png" PostBackUrl="~/Home.aspx" Height="60px" 
+      Width="150px" onclick="ImageButton1_Click" /><br />
+ 
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" >             
+    </asp:ContentPlaceHolder>
+    
+    <table align="left" style="width: 953px" >
+    <tr>
+    <td >
+	<div id="menu">
+		<ul style="font-family: 'times New Roman', Times, serif; font-size: large; width: 1516px;">
+			 <li class="current_page_item"><span><a href="AdminHome.aspx">Home</a></span></li>
+                              <li><a href="Admin_Regi.aspx">Manage_User</a></li>
+                              <li><a href="Admin_Event.aspx">Manage_Events</a></li>
+                              <li><a href="Admin_Decor.aspx">Manage_Decor</a></li>
+                              <li><a href="Admin_Venue.aspx">Manage_Venue</a></li>
+                              <li><a href="Admin_Transport.aspx">Manage_Transport</a></li>
+                              <li><a href="Admin_Catter.aspx">Manage_Food</a></li>
+                              <li><a href="Admin_Card.aspx">Manage_Card</a></li>
+                              <li><a href="Advertise.aspx">Send_Mail</a></li>          
+		</ul><br />
+        <p align="center" 
+      style="font-family: Elephant; font-size: 50px; color: #660066; font-style: italic;">
+     Welcome To B.R. EVENT...!!!</p>
+	</div>
+    </td>
+    </tr>
+	<!-- end #menu -->
+	<!-- end #header -->
+    <tr><td>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+  </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    </table>
+	<!-- end #page -->
+</div>
+
+<div id="footer">
+	<p>Copyright (c) 2017 Br Events. All rights are reserved.</p>
+</div>  
+</form>
+    
+</body>
+</html>
